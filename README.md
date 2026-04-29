@@ -52,6 +52,7 @@ npm start
 You can deploy this project using:
 
 Render / Vercel / Azure
+
  Security Note
 
 Sensitive data like database credentials are not included in this repository.
