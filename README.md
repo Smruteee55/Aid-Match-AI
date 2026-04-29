@@ -17,16 +17,43 @@ AidMatch-AI is a real-time crisis management ecosystem designed to bridge the ga
 - **Database:** MongoDB Atlas
 - **AI Integration:** Simulated Gemma 4 NLP Logic for crisis categorization
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
-### 1. Backend Setup
-```bash
-cd server
+ Setup Instructions
+1. Clone the Repository
+git clone https://github.com/your-username/aid-match-ai.git
+cd aid-match-ai
+2. Install Dependencies
 npm install
-# Create a .env file with your MONGO_URI
-node server.js
-
 cd client
 npm install
+3. Setup Environment Variables
+
+Create a .env file inside the server/ folder and add:
+
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+
+ You can refer to .env.example for guidance.
+
+4. Run the Project
+
+Start Backend:
+
+cd server
 npm start
+
+Start Frontend:
+
+cd client
+npm start
+ Deployment (Optional)
+
+You can deploy this project using:
+
+Render / Vercel / Azure
+ Security Note
+
+Sensitive data like database credentials are not included in this repository.
+Please create your own .env file using the provided .env.example.
 
